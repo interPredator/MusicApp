@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="" id="gTV-IL-0wX" userLabel="Horizontal Cell" customClass="HorizontalCell" customModule="Music_Player" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="318" height="163"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="318" height="163"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Uj-vu-GTM">
+                        <rect key="frame" x="0.0" y="0.0" width="318" height="163"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eRB-e7-spO">
+                                <rect key="frame" x="0.0" y="0.0" width="318" height="163"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="anw-s3-Vps">
+                                <rect key="frame" x="0.0" y="0.0" width="318" height="163"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYn-yN-nM7" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                                <rect key="frame" x="10" y="10" width="298" height="143"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
+                                <color key="textColor" red="0.022293094545602798" green="0.67845112085342407" blue="0.9803730845451355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="uYn-yN-nM7" firstAttribute="top" secondItem="4Uj-vu-GTM" secondAttribute="top" constant="10" id="3A2-hk-vq2"/>
+                            <constraint firstItem="anw-s3-Vps" firstAttribute="top" secondItem="4Uj-vu-GTM" secondAttribute="top" id="67c-Mc-4J7"/>
+                            <constraint firstAttribute="bottom" secondItem="anw-s3-Vps" secondAttribute="bottom" id="7jg-B6-kbG"/>
+                            <constraint firstItem="eRB-e7-spO" firstAttribute="top" secondItem="4Uj-vu-GTM" secondAttribute="top" id="HHA-o4-lwm"/>
+                            <constraint firstAttribute="trailing" secondItem="eRB-e7-spO" secondAttribute="trailing" id="HMw-Kr-Hd2"/>
+                            <constraint firstAttribute="bottom" secondItem="eRB-e7-spO" secondAttribute="bottom" id="Kgp-hj-juB"/>
+                            <constraint firstAttribute="trailing" secondItem="uYn-yN-nM7" secondAttribute="trailing" constant="10" id="Nat-Jm-Izz"/>
+                            <constraint firstItem="eRB-e7-spO" firstAttribute="leading" secondItem="4Uj-vu-GTM" secondAttribute="leading" id="UuU-lE-Las"/>
+                            <constraint firstAttribute="bottom" secondItem="uYn-yN-nM7" secondAttribute="bottom" constant="10" id="j8K-74-scq"/>
+                            <constraint firstAttribute="trailing" secondItem="anw-s3-Vps" secondAttribute="trailing" id="m0b-Aw-M15"/>
+                            <constraint firstItem="uYn-yN-nM7" firstAttribute="leading" secondItem="4Uj-vu-GTM" secondAttribute="leading" constant="10" id="njS-qo-l3Q"/>
+                            <constraint firstItem="anw-s3-Vps" firstAttribute="leading" secondItem="4Uj-vu-GTM" secondAttribute="leading" id="q77-ly-eVk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="4Uj-vu-GTM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Bgm-Ge-oST"/>
+                <constraint firstAttribute="trailing" secondItem="4Uj-vu-GTM" secondAttribute="trailing" id="gQN-Hk-EaZ"/>
+                <constraint firstItem="4Uj-vu-GTM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mYi-9s-bQ6"/>
+                <constraint firstAttribute="bottom" secondItem="4Uj-vu-GTM" secondAttribute="bottom" id="qgh-CH-ivS"/>
+            </constraints>
+            <size key="customSize" width="318" height="163"/>
+            <connections>
+                <outlet property="artistImageView" destination="eRB-e7-spO" id="ARJ-BA-LBM"/>
+                <outlet property="artistNameLabel" destination="uYn-yN-nM7" id="kE0-57-0lc"/>
+                <outlet property="view" destination="4Uj-vu-GTM" id="zBp-dO-YtO"/>
+            </connections>
+            <point key="canvasLocation" x="331.8840579710145" y="121.54017857142857"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="uYn-yN-nM7">
+            <size key="intrinsicContentSize" width="131" height="60"/>
+        </designable>
+    </designables>
+</document>
